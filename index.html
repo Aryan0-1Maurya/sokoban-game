@@ -1,0 +1,110 @@
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Aryan Maurya" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta
+      name="description"
+      content="This is online slokban  game build for your imporove thing skill in this domain by aryan maurya enjoy your game"
+    />
+    <meta name="keywords" content="Sokoban, box-pushing game, puzzle game, strategy game, warehouse keeper, block puzzle, brain teaser, challenging game, logic game, classic game, retro gaming, push and pull, puzzle solving, game of crates, spatial reasoning, maze game, thinking game, intellectual challenge">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://shahfahad.netlify.app/sokoban/swiped-events.min.js"></script>
+    <title>Sokoban game-AmsR</title>
+  </head>
+
+  <body>
+    <div class="title">Sokoban Game</div>
+    <div class="menu">
+      <button onclick="showLevels()">Levels</button>
+      <div class="level">Level 1</div>
+      <button onclick='selectLevel("reset")'>Reset</button>
+      <button onclick="undo()">Undo</button>
+    </div>
+    <div class="main">
+      <div class="info"></div>
+    </div>
+
+    <div class="controls">
+      <div></div>
+      <button onclick="move(-10)" class="material-icons md-48">north</button>
+      <div></div>
+      <button onclick="move(-1)" class="material-icons md-48">west</button>
+      <button onclick="move(10)" class="material-icons md-48">south</button>
+      <button onclick="move(1)" class="material-icons md-48">east</button>
+    </div>
+    <br />
+    <button onclick="showControls()" class="controlsbtn">Show Controls</button>
+    <script>
+      Swal.fire({
+        icon: "success",
+        title: "Welcome All the best from Developer",
+        showConfirmButton: false,
+        timer: 1800,
+        showClass: {
+          popup: `
+     animate__animated
+     animate__fadeInUp
+     animate__faster
+   `,
+        },
+        hideClass: {
+          popup: `
+     animate__animated
+     animate__fadeOutDown
+     animate__faster
+   `,
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->

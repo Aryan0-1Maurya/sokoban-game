@@ -1,0 +1,194 @@
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+* {
+  font-family: "Bubblegum Sans", cursive;
+  color: teal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0px;
+  overflow-y: hidden;
+  background-color: #cfdef3;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(9, 35px);
+  grid-template-rows: repeat(9, 35px);
+  position: relative;
+  margin: 10px 0px 10px 0px;
+}
+
+.main div {
+  background-size: cover;
+}
+.main div.wall {
+  background-image: url("https://shahfahad.netlify.app/sokoban/images/wall.png");
+}
+
+.main div.ground {
+  background-image: url("https://shahfahad.netlify.app/sokoban/images/ground.png");
+}
+
+.main div.outside {
+  background-image: url("https://shahfahad.netlify.app/sokoban/images/outside.png");
+}
+.main div.point {
+  background-image: url("https://shahfahad.netlify.app/sokoban/images/point.png");
+}
+.main div div.player {
+  background-image: url("https://shahfahad.netlify.app/sokoban/images/player.png");
+}
+.main div div.crate {
+  background-image: url("https://shahfahad.netlify.app/sokoban/images/crate.png");
+}
+
+.main div.point div.crate {
+  filter: hue-rotate(50deg);
+}
+
+.main div div {
+  height: 100%;
+  width: 100%;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(2, 40px);
+  grid-gap: 10px 10px;
+  display: none;
+}
+
+.info {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.lvlBtns {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  grid-template-rows: repeat(4, 40px);
+  grid-gap: 4px 4px;
+  align-content: center;
+  justify-content: center;
+}
+
+.lvlBtns div {
+  grid-column: 1 / span 5;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.lvlBtns button {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.info .complete {
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .complete h1 {
+  background-color: rba(255, 255, 255, 0.6);
+  -webkit-text-stroke: 2px white;
+  font-size: 35px;
+}
+.info .complete button {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 0px 5px grey;
+  border-radius: 5px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.menu button {
+  padding: 10px;
+  font-size: 18px;
+}
+.menu .level {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  width: 100vw;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0px 10px 0px;
+}
+
+.controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlsbtn {
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
